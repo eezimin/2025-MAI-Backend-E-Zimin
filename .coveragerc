@@ -1,0 +1,15 @@
+[run]
+source = products  # Имя вашего приложения (или список приложений через запятую)
+omit =
+    */migrations/*
+    */admin.py
+    */tests/*
+
+[report]
+precision = 2
+show_missing = True
+exclude_lines =
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    pragma: no cover
+    pass
