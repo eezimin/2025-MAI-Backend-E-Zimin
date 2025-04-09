@@ -29,6 +29,6 @@ if __name__ == "__main__":
     cache.set("Jesse", "Pinkman")
     cache.set("Walter", "White")
     cache.set("Jesse", "James")
-    cache.get("Jesse")  # вернёт 'James'
+    print(cache.get("Jesse"))  # вернёт 'James'
     cache.rem("Walter")
-    cache.get("Walter")  # вернёт ''
+    print(cache.get("Walter"))  # вернёт ''
